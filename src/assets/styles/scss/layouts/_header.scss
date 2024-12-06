@@ -1,0 +1,11 @@
+#app-header {
+    background-color: var(--white) !important;
+
+    .toggle-sidebar-wrapper {
+        &.hide {
+            .toggle-sidebar-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

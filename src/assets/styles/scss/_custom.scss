@@ -1,0 +1,30 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+$primary: #161D6F;
+
+.fs-12px {
+    font-size: 12px !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.search-control {
+    width: 100%;
+    max-width: 300px;
+}
+
+.no-scrollbar {
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+}
+
+.form-btn {
+    min-width: 100px !important;
+}

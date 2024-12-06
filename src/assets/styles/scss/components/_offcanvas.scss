@@ -1,0 +1,38 @@
+.offcanvas {
+    &.offcanvas-start {
+        width: 370px !important;
+
+        @media screen and (max-width: 576px) {
+            width: 70% !important;
+        }
+    }
+}
+
+#app-sidebar, .offcanvas-sidebar {
+    width: 370px !important;
+    color: var(--white);
+    padding: 1.5rem !important;
+    background-color: var(--primary);
+    position: relative;
+    transition: var(--transition);
+
+    &.hide {
+        width: 0 !important;
+        padding: 0 !important;
+    }
+
+    @media screen and (max-width: 992px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 99;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 50% !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 70% !important;
+    }
+}

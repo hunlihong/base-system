@@ -1,0 +1,46 @@
+.dropdown-toggle {
+    &.profile-dropdown-toggle {
+        transition: var(--transition) !important;
+        background-color: transparent !important;
+
+        &:hover {
+            background-color: rgba(211, 211, 211, 0.25) !important;
+        }
+
+        &::after {
+            display: none !important;
+        }
+
+        .merchant-profile {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+.dropdown-menu {
+    transition: var(--transition) !important;
+    animation: dropdown-animation 0.3s ease-in-out forwards;
+
+    .dropdown-item {
+        padding: 0.5rem 1rem !important;
+
+        &:focus, &:active {
+          color: var(--black) !important;
+          background-color: transparent !important;
+        }
+    }
+}
+
+@keyframes dropdown-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(80px);
+    }
+}

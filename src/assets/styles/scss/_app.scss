@@ -1,0 +1,26 @@
+:root {
+    --primary: #161D6F;
+    --white: #FFFFFF;
+    --black: #000000;
+    --transition:all 0.2s ease-in-out;
+}
+
+// custom-manually
+@import "./custom";
+
+// plugins
+@import "./plugins/react-table";
+@import "./plugins/react-dropzone";
+
+// layouts
+@import "./layouts/sidebar";
+@import "./layouts/header";
+
+// components
+@import "./components/dropdown";
+@import "./components/offcanvas";
+@import "./components/progress";
+@import "./components/form-control";
+
+// bootstrap-original
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
